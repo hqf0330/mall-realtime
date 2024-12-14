@@ -67,14 +67,14 @@ public class HBaseUtil {
         try (Admin admin = conn.getAdmin()) {
             TableName tableObj = TableName.valueOf(namespace, table);
             if (!admin.tableExists(tableObj)) {
-                System.out.println(namespace + ":" + table + " dose not exist!!!!");
+                log.warn(namespace + ":" + table + " dose not exist!!!!");
                 return;
             }
             admin.disableTable(tableObj);
             admin.deleteTable(tableObj);
-            System.out.println(namespace + ":" + table + " has been droped!!!!");
+            log.warn(namespace + ":" + table + " has been dropped!!!!");
         } catch (IOException e) {
-            log.error("drop hbase table failed", e);
+//            log.error("drop hbase table failed", e);
         }
     }
 
