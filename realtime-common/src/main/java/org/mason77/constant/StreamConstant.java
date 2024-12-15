@@ -11,7 +11,8 @@ public class StreamConstant {
 
     // kafka 常量版 配置
     public static final String KAFKA_BROKERS = "node02:9092,node03:9092,node04:9092";
-    public static final String KAFKA_TOPIC = "topic_db";
+    public static final String KAFKA_DB = "topic_db";
+    public static final String KAFKA_LOG = "topic_log";
     public static final String KAFKA_GROUP_ID = "dim_app_group";
 
     // dim的消费者配置

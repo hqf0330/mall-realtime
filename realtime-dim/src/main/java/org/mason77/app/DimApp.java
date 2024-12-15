@@ -32,7 +32,7 @@ import java.util.*;
 
 public class DimApp extends BaseApp {
     public static void main(String[] args) {
-        new DimApp().start(10001, 3, "dim_app", StreamConstant.KAFKA_TOPIC);
+        new DimApp().start(10001, 3, "dim_app", StreamConstant.KAFKA_DB);
     }
 
     @Override
