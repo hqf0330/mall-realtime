@@ -15,11 +15,17 @@ public class StreamConstant {
     public static final String KAFKA_LOG = "topic_log";
     public static final String KAFKA_GROUP_ID = "dim_app_group";
 
+    // kafka dwd traffic
+    public static final String TOPIC_DWD_TRAFFIC_PAGE = "dwd_traffic_page";
+    public static final String TOPIC_DWD_TRAFFIC_START = "dwd_traffic_start";
+    public static final String TOPIC_DWD_TRAFFIC_ACTION = "dwd_traffic_action";
+    public static final String TOPIC_DWD_TRAFFIC_DISPLAY = "dwd_traffic_display";
+    public static final String TOPIC_DWD_TRAFFIC_ERR = "dwd_traffic_err";
+
     // dim的消费者配置
 
     // mysql配置
-    public static final String MYSQL_DRIVER = "com.mysql.cj.jdbc.Driver";
-    public static final String MYSQL_HOST = "node02";
+    public static final String MYSQL_DRIVER = "crae02";
     public static final Integer MYSQL_PORT = 3306;
     public static final String MYSQL_USER_NAME = "root";
     public static final String MYSQL_PASSWORD = "000000";
